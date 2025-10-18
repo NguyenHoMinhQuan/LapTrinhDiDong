@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 🔹 Ánh xạ đúng với ID trong activity_main.xml
         edtHoTen = findViewById(R.id.edtHoTen);
         edtDiem = findViewById(R.id.edtDiem);
         btnKetQua = findViewById(R.id.btnKetQua);
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
 
-                // 🔹 Gửi dữ liệu sang ResultActivity
                 Intent intent = new Intent(MainActivity.this, ResultActivity.class);
                 intent.putExtra("name", name);
                 intent.putExtra("score", score);
